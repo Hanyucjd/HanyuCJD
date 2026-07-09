@@ -30,17 +30,17 @@ const CONTENT = {
           label: "Giáo trình chính HSK1 2.0",
           type: "PDF",
           // Dán link Google Drive dạng "preview" hoặc link file .pdf trực tiếp vào đây
-          url: "https://drive.google.com/file/d/1gQ07RFAIFY5YajWXoS57okMxe4-B1XA0/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1gQ07RFAIFY5YajWXoS57okMxe4-B1XA0/preview"
         },
         {
           label: "Sách bài tập HSK1 2.0",
           type: "PDF",
-          url: "https://drive.google.com/file/d/1na6SDt09iP5BXP_A5NIRlHssvcJnK6Q2/view?usp=drive_link"
+          url: "https://drive.google.com/file/d/1na6SDt09iP5BXP_A5NIRlHssvcJnK6Q2/preview"
         },
         {
           label: "Sách luyện viết chữ Hán (bản cũ)",
           type: "PDF",
-          url: "https://drive.google.com/file/d/19TbFFgdNzkT8TawTR8SMcucDrUz1zMXg/view?usp=drive_link"
+          url: "https://drive.google.com/file/d/19TbFFgdNzkT8TawTR8SMcucDrUz1zMXg/preview"
         }
       ],
       audios: [
