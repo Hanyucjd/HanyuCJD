@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video · 學中文</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="seal-mark hanzi">学</span>
+      <span class="brand-text"><span class="cn">學中文</span><span class="vn">Học tiếng Trung cùng Cô</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Mở menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="giao-trinh.html">Giáo trình</a>
+      <a href="tro-choi.html">Trò chơi</a>
+      <a href="video.html" class="active">Video</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">影 · Video theo chủ đề</p>
+      <h1>Video</h1>
+      <p class="lede">Video từ YouTube và TikTok, tuyển chọn theo chủ đề. Bấm vào video để xem ngay tại đây, không chuyển sang trang gốc.</p>
+      <div class="brush-rule"></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="topic-tabs" id="topic-tabs"></div>
+      <div class="video-grid" id="video-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Học Tiếng Trung Cùng Cô</p>
+    <p>Thêm video / chủ đề mới tại <code>assets/js/data.js</code></p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

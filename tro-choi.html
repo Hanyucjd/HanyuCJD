@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trò chơi · 學中文</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="seal-mark hanzi">学</span>
+      <span class="brand-text"><span class="cn">學中文</span><span class="vn">Học tiếng Trung cùng Cô</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Mở menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="giao-trinh.html">Giáo trình</a>
+      <a href="tro-choi.html" class="active">Trò chơi</a>
+      <a href="video.html">Video</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">戏 · Học mà chơi, chơi mà học</p>
+      <h1>Trò chơi luyện tập</h1>
+      <p class="lede">Các trò chơi tự thiết kế để ôn từ vựng, phát âm và chữ Hán. Bấm vào một trò chơi để bắt đầu chơi ngay trong cửa sổ này.</p>
+      <div class="brush-rule"></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="game-grid" id="game-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Học Tiếng Trung Cùng Cô</p>
+    <p>Thêm trò chơi mới tại <code>assets/js/data.js</code> (đặt file .html trong thư mục <code>/games</code>)</p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

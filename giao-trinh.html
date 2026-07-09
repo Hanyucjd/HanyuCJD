@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giáo trình · 學中文</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="seal-mark hanzi">学</span>
+      <span class="brand-text"><span class="cn">學中文</span><span class="vn">Học tiếng Trung cùng Cô</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Mở menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="giao-trinh.html" class="active">Giáo trình</a>
+      <a href="tro-choi.html">Trò chơi</a>
+      <a href="video.html">Video</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">本 · Tài liệu học tập</p>
+      <h1>Giáo trình</h1>
+      <p class="lede">Giáo trình, sách bài tập, sách luyện viết chữ Hán và file nghe cho từng cấp độ. Bấm vào tài liệu để xem hoặc tải; bấm nút phát để nghe audio ngay tại đây.</p>
+      <div class="brush-rule"></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="filter-row">
+        <button class="chip active" data-filter="all">Tất cả</button>
+        <button class="chip" data-filter="Sơ cấp">Sơ cấp</button>
+        <button class="chip" data-filter="Trung cấp">Trung cấp</button>
+        <button class="chip" data-filter="Cao cấp">Cao cấp</button>
+      </div>
+      <div class="course-grid" id="course-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Học Tiếng Trung Cùng Cô</p>
+    <p>Thêm khoá học mới tại <code>assets/js/data.js</code></p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
