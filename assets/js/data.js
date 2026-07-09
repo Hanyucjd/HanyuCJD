@@ -21,31 +21,31 @@ const CONTENT = {
      ------------------------------------------------------------------ */
   courses: [
     {
-      id: "hsk2-0-so-cap-1",
-      title: "HSK 2.0 — Sơ cấp 1",
+      id: "hsk2-0-HSK-1",
+      title: "HSK 2.0 — HSK 1",
       category: "Giáo trình chuẩn HSK 2.0",
       description: "Ngữ âm, 150 từ vựng nền tảng và các mẫu câu giao tiếp cơ bản.",
       materials: [
         {
-          label: "Giáo trình chính",
+          label: "Giáo trình chính HSK1 2.0",
           type: "PDF",
           // Dán link Google Drive dạng "preview" hoặc link file .pdf trực tiếp vào đây
-          url: "https://drive.google.com/file/d/FILE_ID_GIAO_TRINH/preview"
+          url: "https://drive.google.com/file/d/1gQ07RFAIFY5YajWXoS57okMxe4-B1XA0/view?usp=sharing"
         },
         {
-          label: "Sách bài tập",
+          label: "Sách bài tập HSK1 2.0",
           type: "PDF",
-          url: "https://drive.google.com/file/d/FILE_ID_BAI_TAP/preview"
+          url: "https://drive.google.com/file/d/1na6SDt09iP5BXP_A5NIRlHssvcJnK6Q2/view?usp=drive_link"
         },
         {
-          label: "Sách luyện viết chữ Hán",
+          label: "Sách luyện viết chữ Hán (bản cũ)",
           type: "PDF",
-          url: "https://drive.google.com/file/d/FILE_ID_LUYEN_VIET/preview"
+          url: "https://drive.google.com/file/d/19TbFFgdNzkT8TawTR8SMcucDrUz1zMXg/view?usp=drive_link"
         }
       ],
       audios: [
-        { name: "Bài 1 — Chào hỏi 你好", src: "assets/audio/hsk2-0-bai1.mp3" },
-        { name: "Bài 2 — Giới thiệu bản thân", src: "assets/audio/hsk2-0-bai2.mp3" }
+        { name: "Audio Giáo trình chính HSK1 2.0", url: "https://drive.google.com/drive/folders/12EQ8W68YrXDOYlLkasH-PxpTe4XyvlRh?usp=drive_link" },
+        { name: "Audio Sách bài tập HSK1 2.0", url: "https://drive.google.com/drive/folders/1S8T234-xMaDMlnZ4rYTVeF8qVpsylxkx?usp=drive_link" }
         // Thêm dòng tương tự cho các bài tiếp theo. File .mp3 đặt trong assets/audio/
       ]
     },
