@@ -19,68 +19,65 @@ const CONTENT = {
           "Giáo trình Boya"
           "Giáo trình Msutong"
      ------------------------------------------------------------------ */
-const CONTENT = {
   courses: [
     {
-      id: "hsk2-0-so-cap-1",
-      title: "HSK 2.0 — Sơ cấp 1",
+      id: "hsk2-0-HSK-1",
+      title: "HSK 2.0 — HSK 1",
       category: "Giáo trình chuẩn HSK 2.0",
       description: "Ngữ âm, 150 từ vựng nền tảng và các mẫu câu giao tiếp cơ bản.",
-      
-      // ✅ MỚI: Thêm danh sách bài học
-      lessons: [
+      materials: [
         {
-          number: "Bài 1",
-          title: "Chào hỏi 你好",
-          description: "Học cách chào hỏi cơ bản",
-          audio: "assets/audio/hsk2-0-bai1.mp3",
-          pdf: "https://drive.google.com/file/d/FILE_ID/preview",
-          exercises: "https://drive.google.com/file/d/FILE_ID/preview" // optional
+          label: "Giáo trình chính HSK1 2.0",
+          type: "PDF",
+          // Dán link Google Drive dạng "preview" hoặc link file .pdf trực tiếp vào đây
+          url: "https://drive.google.com/file/d/1gQ07RFAIFY5YajWXoS57okMxe4-B1XA0/preview"
         },
         {
-          number: "Bài 2",
-          title: "Giới thiệu bản thân",
-          description: "Học cách giới thiệu tên, tuổi, quê quán",
-          audio: "assets/audio/hsk2-0-bai2.mp3",
-          pdf: "https://drive.google.com/file/d/FILE_ID/preview"
+          label: "Sách bài tập HSK1 2.0",
+          type: "PDF",
+          url: "https://drive.google.com/file/d/1na6SDt09iP5BXP_A5NIRlHssvcJnK6Q2/preview"
         },
         {
-          number: "Bài 3",
-          title: "Gia đình",
-          description: "Từ vựng về gia đình",
-          audio: "assets/audio/hsk2-0-bai3.mp3",
-          pdf: "https://drive.google.com/file/d/FILE_ID/preview"
+          label: "Sách luyện viết chữ Hán (bản cũ)",
+          type: "PDF",
+          url: "https://drive.google.com/file/d/19TbFFgdNzkT8TawTR8SMcucDrUz1zMXg/preview"
         }
-        // Thêm các bài khác...
       ],
-      
-      // Giữ nguyên materials (tài liệu bổ trợ)
-      materials: [
-        { label: "Sách bài tập", type: "PDF", url: "https://drive.google.com/file/d/FILE_ID/preview" },
-        { label: "Sách luyện viết chữ Hán", type: "PDF", url: "https://drive.google.com/file/d/FILE_ID/preview" }
-      ],
-      
-      // ❌ XÓA audios cũ (đã có trong lessons)
-    },
-    
-    // === THÊM CHO CÁC GIÁO TRÌNH KHÁC ===
-    {
-      id: "hsk3-0-so-cap-1",
-      title: "HSK 3.0 — Sơ cấp 1 (Cấp 1)",
-      category: "Giáo trình chuẩn HSK 3.0",
-      description: "Bám sát khung năng lực HSK 3.0 mới, 500 từ vựng cấp 1–2.",
-      lessons: [
-        { number: "Bài 1", title: "Ôn tập HSK 2.0", audio: "assets/audio/hsk3-0-bai1.mp3", pdf: "..." },
-        { number: "Bài 2", title: "Thời gian", audio: "assets/audio/hsk3-0-bai2.mp3", pdf: "..." }
-      ],
-      materials: [
-        { label: "Giáo trình chính", type: "PDF", url: "..." }
+      audios: [
+        { name: "Audio Giáo trình chính HSK1 2.0", url: "https://drive.google.com/drive/folders/12EQ8W68YrXDOYlLkasH-PxpTe4XyvlRh?usp=drive_link" },
+        { name: "Audio Sách bài tập HSK1 2.0", url: "https://drive.google.com/drive/folders/1S8T234-xMaDMlnZ4rYTVeF8qVpsylxkx?usp=drive_link" }
+        // Thêm dòng tương tự cho các bài tiếp theo. File .mp3 đặt trong assets/audio/
       ]
     },
-    
-    // ... Các giáo trình khác tương tự
-  ]
-};
+         {
+      id: "hsk2-0-HSK-2",
+      title: "HSK 2.0 — HSK 2",
+      category: "Giáo trình chuẩn HSK 2.0",
+      description: "Ngữ âm, 300 từ vựng nền tảng và các mẫu câu giao tiếp cơ bản.",
+      materials: [
+        {
+          label: "Giáo trình chính HSK2 2.0",
+          type: "PDF",
+          // Dán link Google Drive dạng "preview" hoặc link file .pdf trực tiếp vào đây
+          url: "https://drive.google.com/file/d/1FPmP2gOgYkFa6DPAosVFTeY4dywYmMb4/preview"
+        },
+        {
+          label: "Sách bài tập HSK2 2.0",
+          type: "PDF",
+          url: "https://drive.google.com/file/d/1j1RG-hnisLINyzmsvSVdkkYymYyp7ts-/preview"
+        },
+        {
+          label: "Sách luyện viết chữ Hán HSK2 (bản cũ)",
+          type: "PDF",
+          url: "https://drive.google.com/file/d/1wOtEKholcpwz3Rrhc_rKpMcfggw3ZdPK/preview"
+        }
+      ],
+      audios: [
+        { name: "Audio Giáo trình chính HSK2 2.0", url: "https://drive.google.com/drive/folders/1o0XcaYw8GzXPzHc5Lhr2hBbtx0-Yna_4?usp=drive_link" },
+        { name: "Audio Sách bài tập HSK2 2.0", url: "https://drive.google.com/drive/folders/1iM-xUR7tPykdKlutx8A0vdfDS5R2cVpu?usp=drive_link" }
+        // Thêm dòng tương tự cho các bài tiếp theo. File .mp3 đặt trong assets/audio/
+      ]
+    },
     {
       id: "hsk3-0-so-cap-1",
       title: "HSK 3.0 — Sơ cấp 1 (Cấp 1)",
