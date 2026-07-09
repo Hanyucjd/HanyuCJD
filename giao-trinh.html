@@ -34,24 +34,38 @@
     </div>
   </section>
 
-  <section style="padding-top:0">
-    <div class="wrap">
-      <div class="filter-row">
-        <button class="chip active" data-filter="all">Tất cả</button>
-        <button class="chip" data-filter="Giáo trình chuẩn HSK 2.0">HSK 2.0</button>
-        <button class="chip" data-filter="Giáo trình chuẩn HSK 3.0">HSK 3.0</button>
-        <button class="chip" data-filter="Giáo trình Hán ngữ">Hán ngữ</button>
-        <button class="chip" data-filter="Giáo trình Boya">Boya</button>
-        <button class="chip" data-filter="Giáo trình Msutong">Msutong</button>
-      </div>
-      <div class="course-grid" id="course-grid"></div>
+<section style="padding-top:0">
+  <div class="wrap">
+    <!-- Filter cấp 1 -->
+    <div class="filter-row">
+      <button class="chip active" data-filter="all">Tất cả</button>
+      <button class="chip" data-filter="Giáo trình chuẩn HSK 2.0" data-has-sub="true">HSK 2.0</button>
+      <button class="chip" data-filter="Giáo trình chuẩn HSK 3.0">HSK 3.0</button>
+      <button class="chip" data-filter="Giáo trình Hán ngữ">Hán ngữ</button>
+      <button class="chip" data-filter="Giáo trình Boya">Boya</button>
+      <button class="chip" data-filter="Giáo trình Msutong">Msutong</button>
     </div>
-  </section>
-</main>
+    
+    <!-- 👇 THÊM: Filter cấp 2 (sub-filter) -->
+    <div class="sub-filter-row" id="sub-filter-hsk20" style="display: none; margin-top: 12px;">
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK1 2.0">HSK 1</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK2 2.0">HSK 2</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK3 2.0">HSK 3</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK4 hạ 2.0">HSK 4 Hạ</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK4 thượng 2.0">HSK 4 Thượng</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK5 hạ 2.0">HSK 5 Hạ</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK5 thượng 2.0">HSK 5 Thượng</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK6 hạ 2.0">HSK 6 Hạ</button>
+      <button class="chip sub-chip" data-filter="Giáo trình chuẩn HSK6 thượng 2.0">HSK 6 Thượng</button>
+    </div>
+    
+    <div class="course-grid" id="course-grid"></div>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© <span id="year"></span> Học Tiếng Trung Cùng Cô</p>
+    <p>© <span id="year"></span> Học Tiếng Trung Cùng Cô ZHOU</p>
   </div>
 </footer>
 
