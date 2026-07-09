@@ -49,6 +49,35 @@ const CONTENT = {
         // Thêm dòng tương tự cho các bài tiếp theo. File .mp3 đặt trong assets/audio/
       ]
     },
+         {
+      id: "hsk2-0-HSK-2",
+      title: "HSK 2.0 — HSK 2",
+      category: "Giáo trình chuẩn HSK 2.0",
+      description: "Ngữ âm, 300 từ vựng nền tảng và các mẫu câu giao tiếp cơ bản.",
+      materials: [
+        {
+          label: "Giáo trình chính HSK2 2.0",
+          type: "PDF",
+          // Dán link Google Drive dạng "preview" hoặc link file .pdf trực tiếp vào đây
+          url: "https://drive.google.com/file/d/1FPmP2gOgYkFa6DPAosVFTeY4dywYmMb4/preview"
+        },
+        {
+          label: "Sách bài tập HSK2 2.0",
+          type: "PDF",
+          url: "https://drive.google.com/file/d/1j1RG-hnisLINyzmsvSVdkkYymYyp7ts-/preview"
+        },
+        {
+          label: "Sách luyện viết chữ Hán HSK2 (bản cũ)",
+          type: "PDF",
+          url: "https://drive.google.com/file/d/1wOtEKholcpwz3Rrhc_rKpMcfggw3ZdPK/preview"
+        }
+      ],
+      audios: [
+        { name: "Audio Giáo trình chính HSK2 2.0", url: "https://drive.google.com/drive/folders/1o0XcaYw8GzXPzHc5Lhr2hBbtx0-Yna_4?usp=drive_link" },
+        { name: "Audio Sách bài tập HSK2 2.0", url: "https://drive.google.com/drive/folders/1iM-xUR7tPykdKlutx8A0vdfDS5R2cVpu?usp=drive_link" }
+        // Thêm dòng tương tự cho các bài tiếp theo. File .mp3 đặt trong assets/audio/
+      ]
+    },
     {
       id: "hsk3-0-so-cap-1",
       title: "HSK 3.0 — Sơ cấp 1 (Cấp 1)",
